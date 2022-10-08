@@ -1,0 +1,5 @@
+<label for="title" class="mb-2">{{title}}:</label>
+<select class="form-select" aria-label="Default select example" (change)="detectChanges($event)">
+  <option value="All" selected>All</option>
+  <option *ngFor="let category of data">{{category}}</option>
+</select>
